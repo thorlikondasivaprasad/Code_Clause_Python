@@ -1,10 +1,11 @@
 import random as ran
 from tkinter import *
 
-root=Tk()
+root=Tk()   #creating root
 root.geometry("750x750")
 root.title("Password Generator")
-l1=Label(root,text='',font=("times",20))
+
+l1=Label(root,text='',font=("times",20))  #Creating label
 
 def roll():
     small="abcdefghijklmnopqrstuvwxyz"
@@ -17,6 +18,7 @@ def roll():
     l1.pack()
 
 b1=Button(root,text=" Click to Generate a Confidential Password : ",bg='skyblue',fg='red',command=roll)
+#pack() is mandatory to fix that widget into the GUI
 b1.pack()
-
+#ending of root
 root.mainloop()
