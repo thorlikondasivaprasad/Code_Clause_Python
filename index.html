@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-X</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        /* :root{
+            --bos:1px solid white;
+        } */
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            background-color: black;
+            color:white;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            width:100%;
+            background-color: black;
+            
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:70vh;
+            transform:translateY(30px);
+            animation:come 1000ms ease-in-out forwards;
+            opacity: 0;
+        }
+        @keyframes come{
+            100%{
+                opacity:1;
+                transform: translateY(-30px);
+            }
+        }
+        .banner-link{
+            border:var(--bos);
+            padding:5px;
+            display: inline-block;
+            border-radius: 20px;
+            background-color: blueviolet;
+            margin:10px;
+            width:120px;
+            text-align: center;
+        }
+        .link{
+            margin-left:20px;
+        }
+        .highlate{
+            color:yellow;
+        }
+        .about{
+            background:linear-gradient(black,blue,45deg);
+            height:400px;
+        }
+        .poster{
+            border:var(--bos);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding:15px;
+        }
+        .ab-content{
+            width:700px;
+            font-size: 15px;
+        }
+        .line{
+            width:100px;
+            height:5px;
+            background-color: cadetblue;
+            border-radius: 3px;
+        }
+        .ab-line{
+            display: flex;
+        }
+        .companies{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            padding:20px 20px;
+        }
+        .comp-img{
+            width:150px;
+            background-color: rgb(15, 15, 49);
+            border-radius:2px;
+        }
+        .testimonials{
+            display: flex;
+            padding:20px 30px;
+            justify-content: space-evenly;
+            height:400px;
+        }
+        .person{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width:300px;
+        }
+        .p-img{
+            border:1px solid white;
+            border-radius:50%;
+            margin:0 auto;
+            width:100px;
+            height:100px;
+        }
+        .form-in{
+            background-color: rgb(61, 60, 60);
+            color:white;
+            border:none;
+            width:400px;
+            height:30px;
+        }
+        .letter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding:20px;
+        }
+        .sub{
+            border-radius:6px;
+        }
+        input{
+            margin:10px 0;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding:0 70px;
+        }
+        .sec{
+            height:300px;
+        }
+        .image{
+            margin-bottom:20px;
+        }
+        .person p{
+            text-align: center;
+        }
+        .banner h2{
+            font-size: x-large;
+        }
+        .logo{
+            width:700px;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="navbar">
+    <div class="logo">
+        <h3>Code-X</h3>
+    </div>
+    <div class="nav-links">
+        <span class="link"><a href="#courses">Courses</a></span>
+        <span class="link"><a href="#mentorship">Mentorships</a></span>
+        <span class="link"><a href="#events">Events</a></span>
+        <span class="link"><a href="#testimonials">Testimonials</a></span>
+        <span class="link"><a href="#join">Join</a></span>
+    </div>
+   </div>
+    <br>
+    <br><br>
+   <div class="banner">
+    <h2 style="font-size: 100px;">Inspire. Educate.</h2><h2 style="font-size: 100px;">Empower</h2>
+    <div>Lorem ipsum dolor sit amet <span class="highlate">consectetur, 
+        adipisicing</span> elit. Harum ea dolores aliquam pariatur
+    </div>
+    <div>Lorem ipsum dolor sit amet sconsectetur, 
+         <span class="highlate">Harum ea dolores</span> aliquam 
+    </div>
+    <br>
+    <div>
+        <a class="banner-link" href="">Courses</a>
+        <a class="banner-link" href="">Mentorships</a>
+        <a class="banner-link" href="">Events</a>
+    </div>
+</div>
+
+<div class="about">
+    <div class="poster">
+        <div class="image">
+            <img src="./assets/aboutus.png" alt="about" width="400px">
+            
+        </div>
+
+        <div class="ab-content">
+            <h2>About Us</h2>
+            <div class="line"></div>
+            <br>
+            
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">imgLorem ipsum dolor sit amet  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div>
+                <a class="banner-link" href="">Discord</a>
+                <a class="banner-link" href="">Telegram</a>
+                <a class="banner-link" href="">Newsletter</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about" id="courses">
+    <div class="poster">
+        
+        <div class="ab-content">
+            <h2>Courses</h2>
+            <div class="line"></div>
+            <br>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">imgLorem ipsum dolor sit amet  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <h1>$0/month</h1>
+            <div>
+                <a class="banner-link" href="">Explore Courses</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./assets/aboutus.png" alt="about" width="400px">
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1 style="text-align: center;">Our students work at</h1>
+    <div class="line" style="text-align: center;margin:0 auto"></div>
+    <div class="companies">
+        <img src="./assets/google.svg" alt="" class="comp-img">
+        <img src="./assets/microsoft.svg" alt="" class="comp-img">
+        <img src="./assets/amazon.svg" alt="" class="comp-img">
+        <img src="./assets/samsung.svg" alt="" class="comp-img">
+        <img src="./assets/cisco.svg" alt="" class="comp-img">
+    </div>
+</div>
+
+<br><br>
+<div class="testimonials" id="testimonials">
+    <div class="person">
+        <div>
+            <img class="p-img" src="./assets/cisco.svg" width="100px" alt="avatar">
+        </div>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet sconsectetur Lorem m dolor sit ametit amet sconsectetur
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet sclor sit amet sconsectetur Lorem ipsum dolor sorem ipsumtur, Lorem ipsum dolor sit amet sconsectetur, 
+        </p>
+        <div class="line" style="background-color: rgb(64, 65, 66);"></div>
+        <h3 style="font-size: small;">Siva Nithin</h3>
+        <h2 style="font-size: large;color:aliceblue">@GSIVANITHIN</h2>
+    </div>
+    <div class="person">
+        <div>
+            <img class="p-img" src="./assets/cisco.svg" alt="avatar" width="100px">
+        </div>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet sconsectetur Lorem m dolor sit ametit amet sconsectetur
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet sclor sit amet sconsectetur Lorem ipsum dolor sorem ipsumtur, Lorem ipsum dolor sit amet sconsectetur, 
+        </p>
+        <div class="line" style="background-color: rgb(64, 65, 66);"></div>
+        <h3 style="font-size: small;">Siva Nithin</h3>
+        <h2 style="font-size: large;color:aliceblue">@GSIVANITHIN</h2>
+    </div>
+    <div class="person">
+        <div>
+            <!-- <img class="p-img" src="./assets/avatar1.svg" alt="avatar" width="100px"> -->
+            <img class="p-img" src="./assets/cisco.svg" alt="about" width="400px">
+        </div>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet sconsectetur Lorem m dolor sit ametit amet sconsectetur
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet sclor sit amet sconsectetur Lorem ipsum dolor sorem ipsumtur, Lorem ipsum dolor sit amet sconsectetur, 
+        </p>
+        <div class="line" style="background-color: rgb(64, 65, 66);"></div>
+        <h3 style="font-size: small;">Siva Nithin</h3>
+        <h2 style="font-size: large;color:aliceblue">@GSIVANITHIN</h2>
+    </div>
+</div>
+
+<br><br>
+<div class="about" id="mentorship">
+    <div class="poster">
+        <div class="image">
+            <img src="./assets/mentorship.png" alt="about" width="400px">
+        </div>
+        <div class="ab-content">
+            <h2>Mentorship</h2>
+            <div class="line"></div>
+            <br>
+            
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">imgLorem ipsum dolor sit amet  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div>
+                <a class="banner-link" href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="about" id="events">
+    <div class="poster">
+        
+        <div class="ab-content">
+            <h2>Events</h2>
+            <div class="line"></div>
+            <br>
+            
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">imgLorem ipsum dolor sit amet  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div class="ab-line"><img src="./assets/star.png" alt="" style="margin-right:10px" height="20px"><p class="ab-matter">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p></div>
+            <div>
+                <a class="banner-link" href="">Ongoing Events</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./assets/events.jpg" alt="about" width="400px">
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="letter" id="join">
+    <h2>Mentorship</h2>
+    <div class="line"></div>
+    <br>
+    <p>Subscribe and never miss our oppurtunity.</p>
+    <div class="form">
+        <label for="">First Name <br><input class="form-in" placeholder="Enter your first name" type="text"></label><br>
+        <label for="">Last Name <br><input class="form-in" placeholder="Enter your last name" type="text"></label><br>
+        <label for="">Email <br><input class="form-in" placeholder="Enter your email address" type="text"></label><br>
+        <a class="banner-link sub" href="">Submit</a>
+    </div>
+</div>
+<br><br>
+<div class="footer">
+    <div class="sec">
+    <h2>Organisation</h2>
+    <div class="line"></div>
+    <p>About</p>
+    <p>FAQ</p>
+    <p>News Letter</p>
+    </div>
+    <div class="sec">
+        <h2>Community</h2>
+    <div class="line"></div>
+    <p>Blog</p>
+    <p>Events</p>
+    <p>courses</p>
+    <p>Webinors</p>
+    <p>Raodmaps</p>
+    </div>
+    
+    <div class="sec">
+        <h2>Socials</h2>
+        <div class="line"></div>
+        <p>Instagram</p>
+        <p>Linkiedin</p>
+        <p>Twitter</p>
+        <p>Github</p>
+        <p>Youtube</p>
+        </div>
+    <div class="sec">
+        <h2>Contact</h2>
+        <div class="line"></div>
+        <p>User@gmail.com</p>
+        <p>Discord</p>
+        <p>Telegram</p>
+        </div>
+    </div>
+<div style="text-align: center;">@Copyrights by Code-X. All rights reserved.</div>
+    <!-- Link to Bootstrap JavaScript (popper.js and Bootstrap JS) -->
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- 19 -->
